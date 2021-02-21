@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online users</title>
+
+</head>
+<body>
+
+    <ul id="online">
+        
+    </ul>
+    <script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    var socket = io();
+    let room_={
+        sender:5788,
+        receiver:23245
+    }
+    socket.emit('room_name',room_.sender+'_'+room_.receiver)
+    socket.on('online', function(user){
+        $('#online').append(`<li id="${user}"><a href=''>${user}</a></li>`);
+      });
+      socket.on('offline', function(user){
+          $('#'+user).hide();
+
+      });
+</script>
+</body>
+</html>

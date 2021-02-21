@@ -1,0 +1,25 @@
+{
+  "name": "reusable_chat_module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadrackkip/chat_application_node_js.git"
+  },
+  "author": "shadrak_kip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadrackkip/chat_application_node_js/issues"
+  },
+  "homepage": "https://github.com/shadrackkip/chat_application_node_js#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "ngx-socket-io": "^3.2.0",
+    "nodemon": "^2.0.6",
+    "socket.io": "^2.3.0"
+  }
+}
